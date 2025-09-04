@@ -2,7 +2,7 @@
   {
     "name": "OSLO-airAndWater-Core-ap",
     "type": "ap",
-    "eap": "OSLO-AirAndWater-Core-AP.EAP",
+    "eap": "OSLO-AirAndWater-Core-AP.feap",
     "diagram": "Air&Water-Core",
     "template": "airandwaterCore-ap_en.j2",
     "title": "ODALA Air & Water - Core (Application Profile)",
