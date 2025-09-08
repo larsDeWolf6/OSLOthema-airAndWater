@@ -1,0 +1,1088 @@
+{
+  "@context": {
+    "oslo": "https://implementatie.data.vlaanderen.be/ns/oslo-toolchain#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rec": "http://www.w3.org/2001/02pd/rec54#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "packages": "@included",
+    "classes": "@included",
+    "datatypes": "@included",
+    "attributes": "@included",
+    "referencedEntities": "@included",
+    "baseURI": {
+      "@id": "oslo:baseURI",
+      "@type": "@id"
+    },
+    "vocDefinition": {
+      "@id": "oslo:vocDefinition",
+      "@container": "@set"
+    },
+    "apDefinition": {
+      "@id": "oslo:apDefinition",
+      "@container": "@set"
+    },
+    "vocLabel": {
+      "@id": "oslo:vocLabel",
+      "@container": "@set"
+    },
+    "apLabel": {
+      "@id": "oslo:apLabel",
+      "@container": "@set"
+    },
+    "diagramLabel": {
+      "@id": "oslo:diagramLabel"
+    },
+    "scope": {
+      "@id": "oslo:scope"
+    },
+    "vocUsageNote": {
+      "@id": "oslo:vocUsageNote",
+      "@container": "@set"
+    },
+    "apUsageNote": {
+      "@id": "oslo:apUsageNote",
+      "@container": "@set"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@container": "@set"
+    },
+    "range": {
+      "@id": "rdfs:range"
+    },
+    "minCount": {
+      "@id": "sh:minCount"
+    },
+    "maxCount": {
+      "@id": "sh:maxCount"
+    },
+    "parent": {
+      "@id": "rdfs:subClassOf",
+      "@type": "owl:Class"
+    },
+    "generatedAtTime": {
+      "@id": "prov:generatedAtTime"
+    },
+    "Package": "oslo:Package",
+    "Class": {
+      "@id": "owl:Class"
+    },
+    "DatatypeProperty": {
+      "@id": "owl:DatatypeProperty"
+    },
+    "ObjectProperty": {
+      "@id": "owl:ObjectProperty"
+    },
+    "authors": {
+      "@type": "foaf:Person",
+      "@id": "foaf:maker"
+    },
+    "editors": {
+      "@type": "foaf:Person",
+      "@id": "rec:editor"
+    },
+    "contributors": {
+      "@type": "foaf:Person",
+      "@id": "dcterms:contributor"
+    },
+    "affiliation": {
+      "@id": "http://schema.org/affiliation"
+    },
+    "assignedURI": {
+      "@id": "oslo:assignedURI",
+      "@type": "@id"
+    },
+    "Datatype": {
+      "@id": "rdfs:Datatype"
+    },
+    "codelist": {
+      "@id": "oslo:codelist",
+      "@type": "@id"
+    },
+    "status": {
+      "@id": "adms:status",
+      "@type": "@id"
+    },
+    "extensions": {
+      "@id": "oslo:extensions",
+      "@container": "@set"
+    }
+  },
+  "@id": "https://data.vlaanderen.be/test/1",
+  "generatedAtTime": "2025-09-08T09:39:34.412Z",
+  "packages": [
+    {
+      "@id": "urn:oslo-toolchain:371bc2bca6ff3e310ed3b6cbfe810cdde0cd38f594f1259bde1109e74f2fe528",
+      "@type": "Package",
+      "assignedURI": "http://todo.com/",
+      "baseURI": "http://todo.com/"
+    }
+  ],
+  "classes": [
+    {
+      "@id": "urn:oslo-toolchain:794dbdbac857cd93bd3f2f728a8e293393844926e4a216fbfcb4dd8461109248",
+      "@type": "Class",
+      "assignedURI": "http://def.isotc211.org/iso19156/2011/Observation#OM_Process",
+      "diagramLabel": [
+        {
+          "@value": "Process"
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:c8154a60af4754dd3fe6ab657d1a4a894cc6ea31b456c18cdf8a27cdbc16cff2",
+      "@type": "Class",
+      "assignedURI": "https://www.w3.org/TR/vocab-ssn/#SOSAPlatform",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "Platform"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "Platform"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "Platform"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A platform is an entity that hosts other entities, particularly sensors, actuators, samplers and other platforms."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A platform is an entity that hosts other entities, particularly sensors, actuators, samplers and other platforms."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "parent": [
+        {
+          "@id": "urn:oslo-toolchain:d0d10ad5b42e6ac50c4576ccdf947be1137c634ac3f857d2009dd5281366198a"
+        }
+      ]
+    },
+    {
+      "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2",
+      "@type": "Class",
+      "assignedURI": "http://todo.com/FeatureOfInterest",
+      "diagramLabel": [
+        {
+          "@value": "FeatureOfInterest"
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage",
+      "parent": [
+        {
+          "@id": "urn:oslo-toolchain:22f06fd5961b6808fe2320a921bcfb73b2c25dccdc1fcd26cc195676ff5477ce"
+        }
+      ]
+    },
+    {
+      "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea",
+      "@type": "Class",
+      "assignedURI": "http://www.w3.org/ns/sosa/Sampling",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "Sampling"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "Sampling"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "Sampling"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "An act of Sampling carries out a (Sampling) Procedure to create or transform one or more Samples."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "An act of Sampling carries out a (Sampling) Procedure to create or transform one or more Samples."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "parent": [
+        {
+          "@id": "urn:oslo-toolchain:c553fe2ca23abc78c3ce948255b32f70c71e0112dd1ebae86ebc1601fb658783"
+        }
+      ]
+    },
+    {
+      "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3",
+      "@type": "Class",
+      "assignedURI": "http://www.w3.org/ns/sosa/Sampler",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "Sampler"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "Sampler"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "Sampler"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A device that is used by, or implements, a (Sampling) Procedure to create or transform one or more samples."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A device that is used by, or implements, a (Sampling) Procedure to create or transform one or more samples."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "parent": [
+        {
+          "@id": "urn:oslo-toolchain:c553fe2ca23abc78c3ce948255b32f70c71e0112dd1ebae86ebc1601fb658783"
+        },
+        {
+          "@id": "urn:oslo-toolchain:f58fe76dec669fd3970a7614e5df72f40d3d19874052b54da0b4e6e65dc40174"
+        }
+      ]
+    },
+    {
+      "@id": "urn:oslo-toolchain:faa9204e11f27dca1d8c4f89de1266c32922c02cc13008dc92533464030b6b98",
+      "@type": "Class",
+      "assignedURI": "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "SamplingFeature"
+        },
+        {
+          "@language": "en",
+          "@value": "SamplingFeature"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "SamplingFeature"
+        },
+        {
+          "@language": "en",
+          "@value": "SamplingFeature"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "SamplingFeature"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Feature, such as a station, transect, section or specimen, which is involved in making observations concerning a domain feature"
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Feature, such as a station, transect, section or specimen, which is involved in making observations concerning a domain feature"
+        },
+        {
+          "@language": "en",
+          "@value": "Feature, such as a station, transect, section or specimen, which is involved in making observations concerning a domain feature"
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External",
+      "parent": [
+        {
+          "@id": "urn:oslo-toolchain:d0d10ad5b42e6ac50c4576ccdf947be1137c634ac3f857d2009dd5281366198a"
+        }
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "@id": "urn:oslo-toolchain:ecbb4f96bd91be9e49afa52f86a4ee46a3d5179ee2ed1f1bcf51a8b562995c3d",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/resultTime",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "resultTime"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "resultTime"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "resultTime"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:499715870"
+      },
+      "minCount": "1",
+      "maxCount": "1",
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:93361cc02f42ffbd4ee1a580b36cab61d70ebccc50933274b5ed052ddf60a788",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/hasSimpleResult",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasSimpleResult"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasSimpleResult"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "hasSimpleResult"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "The simple value of an Observation or Actuation."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "The simple value of an Observation or Actuation."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:2049156247"
+      },
+      "minCount": "1",
+      "maxCount": "1",
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:fe0533102b5e3df46bdc1438b1604d9e305b69ff3f6789f71a022f5d49254a21",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "isFeatureOfInterestOf"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "isFeatureOfInterestOf"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "isFeatureOfInterestOf"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation between a FeatureOfInterest and an Observation about it or an Actuation acting on it, or an act of Sampling that sampled it."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation between a FeatureOfInterest and an Observation about it or an Actuation acting on it, or an act of Sampling that sampled it."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:1a02b74acf14515fc3e68c1f4a561ace776d08b869f612779dbb0b253eda83eb",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasFeatureOfInterest"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasFeatureOfInterest"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "hasFeatureOfInterest"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:a7311a91c0f513eab0557243e3bd180fb3aef504de4c022c365200fb5f4ecc42",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/usedProcedure",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "usedProcedure"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "usedProcedure"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "usedProcedure"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:794dbdbac857cd93bd3f2f728a8e293393844926e4a216fbfcb4dd8461109248"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:01df6682976745e7882eedf7915f1855fb4ee08e5f0913c90c3bd921b2df0316",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/madeSampling",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "madeSampling"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "madeSampling"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "madeSampling"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:18fe22f061e0d4a0f386707a9bb33b90422410a2d67e8fac480e14fc9dee03a5",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/madeBySampler",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "madeBySampler"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "madeBySampler"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "madeBySampler"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:3485a0e324d7c9376982fd2676d18621aa7aa3ebd73dee1a6722c46c3921815f",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/hosts",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "hosts"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "hosts"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "hosts"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:c8154a60af4754dd3fe6ab657d1a4a894cc6ea31b456c18cdf8a27cdbc16cff2"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:68f251ec96ee5697cab31873a003b4e777dd50b39ff772c043a7aa0022af07e1",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/isHostedBy",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "isHostedBy"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "isHostedBy"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "isHostedBy"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Sensor, or Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a Sensor, or Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:c8154a60af4754dd3fe6ab657d1a4a894cc6ea31b456c18cdf8a27cdbc16cff2"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:58c5632e971d53d0150062c2e1d0b4bc668eebc716c264308e8aaf3b0b89df9f",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/isResultOf",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "isResultOf"
+        },
+        {
+          "@language": "en",
+          "@value": "isResultOf"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "isResultOf"
+        },
+        {
+          "@language": "en",
+          "@value": "isResultOf"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "isResultOf"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking a Result to the Observation or Actuation that created or caused it."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking a Result to the Observation or Actuation that created or caused it."
+        },
+        {
+          "@language": "en",
+          "@value": "Relation linking a Result to the Observation or Actuation that created or caused it."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:faa9204e11f27dca1d8c4f89de1266c32922c02cc13008dc92533464030b6b98"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:0c389e420fced1287254a8c5cda67381f5a657a97aa65991da493dddbeb94755",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/hasResult",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasResult"
+        },
+        {
+          "@language": "en",
+          "@value": "hasResult"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasResult"
+        },
+        {
+          "@language": "en",
+          "@value": "hasResult"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "hasResult"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."
+        },
+        {
+          "@language": "en",
+          "@value": "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:faa9204e11f27dca1d8c4f89de1266c32922c02cc13008dc92533464030b6b98"
+      },
+      "minCount": "1",
+      "maxCount": "*",
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:df6d5656340c73abe519010c25f4b450b56ac4ebed8c685f656987a246ae6a43",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/hasSample",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasSample"
+        },
+        {
+          "@language": "en",
+          "@value": "hasSample"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "hasSample"
+        },
+        {
+          "@language": "en",
+          "@value": "hasSample"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "hasSample"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a FeatureOfInterest and the Sample used to represent it."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation between a FeatureOfInterest and the Sample used to represent it."
+        },
+        {
+          "@language": "en",
+          "@value": "Relation between a FeatureOfInterest and the Sample used to represent it."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:faa9204e11f27dca1d8c4f89de1266c32922c02cc13008dc92533464030b6b98"
+      },
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:963bc49cf4c0c3d9138963d16b3c6ca8d3a20d8df5022736aa0a9c498e721514",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "assignedURI": "http://www.w3.org/ns/sosa/isSampleOf",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "isSampleOf"
+        },
+        {
+          "@language": "en",
+          "@value": "isSampleOf"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "isSampleOf"
+        },
+        {
+          "@language": "en",
+          "@value": "isSampleOf"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "isSampleOf"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
+        },
+        {
+          "@language": "en",
+          "@value": "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
+        }
+      ],
+      "domain": {
+        "@id": "urn:oslo-toolchain:faa9204e11f27dca1d8c4f89de1266c32922c02cc13008dc92533464030b6b98"
+      },
+      "range": {
+        "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2"
+      },
+      "minCount": "1",
+      "maxCount": "*",
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    }
+  ],
+  "datatypes": [
+    {
+      "@id": "urn:oslo-toolchain:499715870",
+      "@type": "Datatype",
+      "assignedURI": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "diagramLabel": [
+        {
+          "@value": "DateTime"
+        }
+      ]
+    },
+    {
+      "@id": "urn:oslo-toolchain:2049156247",
+      "@type": "Datatype",
+      "assignedURI": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "diagramLabel": [
+        {
+          "@value": "Literal"
+        }
+      ]
+    }
+  ],
+  "referencedEntities": [
+    {
+      "@id": "urn:oslo-toolchain:c8154a60af4754dd3fe6ab657d1a4a894cc6ea31b456c18cdf8a27cdbc16cff2",
+      "@type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "@id": "urn:oslo-toolchain:d0d10ad5b42e6ac50c4576ccdf947be1137c634ac3f857d2009dd5281366198a",
+      "assignedURI": "https://def.isotc211.org/iso19156/2011/GeneralFeatureInstance#GFI_Feature",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "Feature"
+        },
+        {
+          "@language": "en",
+          "@value": "Feature"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "Feature"
+        },
+        {
+          "@language": "en",
+          "@value": "Feature"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "Feature"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Features are abstractions of real-world phenomena."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Features are abstractions of real-world phenomena."
+        },
+        {
+          "@language": "en",
+          "@value": "Features are abstractions of real-world phenomena."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:4b0b6ecadc7afbfcec644043e05e1c6d223e0b5604224771ace07260a0f65bc2",
+      "@type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "@id": "urn:oslo-toolchain:22f06fd5961b6808fe2320a921bcfb73b2c25dccdc1fcd26cc195676ff5477ce",
+      "assignedURI": "http://todo.com/DomainFeature",
+      "diagramLabel": [
+        {
+          "@value": "DomainFeature"
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/InPackage"
+    },
+    {
+      "@id": "urn:oslo-toolchain:6c0e6dfff1634a03cb3f65c1667628e6c58ccbd94a799a322b0d575715571fea",
+      "@type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "@id": "urn:oslo-toolchain:c553fe2ca23abc78c3ce948255b32f70c71e0112dd1ebae86ebc1601fb658783",
+      "assignedURI": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.OM_Process",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "Process"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "Process"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "SamplingProces"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Way in which the result of the Observation was obtained."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "Way in which the result of the Observation was obtained."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    },
+    {
+      "@id": "urn:oslo-toolchain:d75d96afb089257f55d9526516444b840b43c236959443baf5a720ec7a06a5d3",
+      "@type": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "@id": "urn:oslo-toolchain:f58fe76dec669fd3970a7614e5df72f40d3d19874052b54da0b4e6e65dc40174",
+      "assignedURI": "https://www.w3.org/TR/vocab-ssn/#ssn-system",
+      "vocLabel": [
+        {
+          "@language": "nl",
+          "@value": "System"
+        }
+      ],
+      "apLabel": [
+        {
+          "@language": "nl",
+          "@value": "System"
+        }
+      ],
+      "diagramLabel": [
+        {
+          "@value": "System"
+        }
+      ],
+      "vocDefinition": [
+        {
+          "@language": "nl",
+          "@value": "System is a unit of abstraction for pieces of infrastructure that implment Procedures. A system may have components, it's subsystems, which are other Systems."
+        }
+      ],
+      "apDefinition": [
+        {
+          "@language": "nl",
+          "@value": "System is a unit of abstraction for pieces of infrastructure that implment Procedures. A system may have components, it's subsystems, which are other Systems."
+        }
+      ],
+      "scope": "https://data.vlaanderen.be/id/concept/scope/External"
+    }
+  ]
+}
